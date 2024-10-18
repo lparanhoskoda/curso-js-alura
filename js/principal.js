@@ -23,6 +23,7 @@ for (var i = 0; i < pacientes.length; i++) {
         pesoEhValido = false;
         tdImc.textContent = "Peso inválido";
         paciente.classList.add("paciente-invalido");
+        
     }
 
     if (altura <= 0 || altura >= 3.00) {
@@ -30,6 +31,7 @@ for (var i = 0; i < pacientes.length; i++) {
         alturaEhValida = false;
         tdImc.textContent = "Altura inválida";
         paciente.classList.add("paciente-invalido");
+        
     }
 
     if (pesoEhValido && alturaEhValida) {
